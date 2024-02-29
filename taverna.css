@@ -1,0 +1,240 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    color: #333; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+button {
+    background-color: #ffd700; /* Goldgelbe Farbe für Buttons */
+    color: #333; /* Dunkelgrauer Text für Buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.leistungen-liste {
+    font-family: 'Helvetica', sans-serif; /* Schriftart anpassen */
+    max-width: 600px; /* Maximale Breite für bessere Lesbarkeit */
+    margin: 0 auto; /* Horizontal zentriert */
+}
+
+.leistungen-liste ul {
+    list-style-type: none; /* Entferne Aufzählungszeichen */
+    padding: 0; /* Entferne den Innenabstand der Liste */
+}
+
+.leistungen-liste li {
+    margin-bottom: 10px; /* Abstand zwischen Listenpunkten */
+    padding-left: 20px; /* Einrückung der Listenpunkte */
+    position: relative; /* Positionierung für das benutzerdefinierte Aufzählungszeichen */
+}
+
+.leistungen-liste li::before {
+    content: "\2022"; /* Benutzerdefiniertes Aufzählungszeichen (Kreis) */
+    color: #4CAF50; /* Farbe des Aufzählungszeichens */
+    font-size: 1.2em; /* Größe des Aufzählungszeichens */
+    position: absolute; /* Absolute Positionierung relativ zum Listenpunkt */
+    left: 0; /* Positionierung links */
+    top: 5px; /* Vertikale Ausrichtung */
+}
+
+.contact-form-container {
+    
+    text-align: center; /* Zentriert den Inhalt */
+    margin: 0 auto; /* Zentriert das Formular horizontal */
+    max-width: 600px; /* Begrenzt die Breite des Formulars */
+    padding: 20px; /* Innenabstand für das Formular */
+    background-color: #f9f9f9; /* Hintergrundfarbe für das Formular */
+    border-radius: 10px; /* Abgerundete Ecken für das Formular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schatten für das Formular */
+}
+
+.contact-form-container h2 {
+    color: #4CAF50; /* Überschriftsfarbe anpassen */
+}
+
+.contact-form-container p {
+    font-style: italic; /* Kursiver Text für den Absatz */
+}
+
+.contact-form-container form {
+    margin-top: 20px; /* Abstand nach dem vorherigen Inhalt */
+}
+
+.contact-form-container label {
+    font-weight: bold; /* Fettschrift für Labels */
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #4CAF50;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+        background-color: #4CAF50; /* Hinzugefügt für Konsistenz */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Hinzugefügt für Konsistenz */
+        color: #fff; /* Hinzugefügt für Konsistenz */
+        text-align: center; /* Hinzugefügt für Konsistenz */
+    }
+    
+    nav {
+        padding: 5px; /* Geändert für Anpassung */
+        background-color:#333; /* Hinzugefügt für Konsistenz */
+        color:#fff; /* Hinzugefügt für Konsistenz */
+        text-align:center; /* Hinzugefügt für Konsistenz */
+        
+        a:hover{
+            text-decoration:none; /* Geändert für Anpassung */
+            color:#fff; /* Hinzugefügt für Konsistenz */
+            transition:none; /* Geändert für Anpassung */
+        }
+        
+        a{
+            margin-left:auto; /* Geändert für Anpassung */
+            margin-right:auto; /* Geändert für Anpassung */
+            display:block; /* Geändert für Anpassung */
+            padding-top:.5em; /* Geändert für Anpassung */
+            padding-bottom:.5em; /* Geändert für Anpassung */
+            transition:none; /* Geändert für Anpassung */
+        }
+        
+        a:first-child{
+            border-bottom:solid .1em transparent; /* Geändert für Anpassung */
+        }
+        
+        a:last-child{
+            border-top:solid .1em transparent; /* Geändert für Anpassung */
+        }
+        
+        a:not(:last-child){
+            border-bottom:solid .1em transparent; /* Geändert für Anpassung */
+        }
+        
+        a:not(:first-child){
+            border-top:solid .1em transparent; /* Geändert für Anpassung */
+        }
+        
+        a{
+            display:inline-block; /* Geändert für Anpassung */
+            margin-left:.5em; /* Geändert für Anpassung */
+            margin-right:.5em; /* Geändert für Anpassung */
+            padding-top:.5em; /* Geändert für Anpassung */
+            padding-bottom:.5em; /* Geändert für Anpassung */
+            transition:.3s ease-in-out all; /* Geändert für Anpassung */
+            
+            &:hover{
+                background-color:#4CAF50; /* Hinzugefügt für Konsistenz */
+                color:#fff !important; /* Hinzugefügt für Konsistenz und Priorität*/
+                text-decoration:none !important; /* Hinzugefügt und Priorität gesetzt*/
+                transition:.3s ease-in-out all !important;/* Hinzugefügt und Priorität gesetzt*/
+                border-radius:.3em;/* Hinzugefügt und Priorität gesetzt*/
+                box-shadow:.2em .2em .2em rgba(0,0,0,.2);/* Hinzugefügt und Priorität gesetzt*/
+                
+                &:not(:first-child){
+                    border-left:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                }
+                
+                &:not(:last-child){
+                    border-right:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                }
+                
+                &:first-child{
+                    border-radius:.3em .3em 0 0;/* Hinzugefügt und Priorität gesetzt*/
+                    border-top:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                    border-left:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                    border-right:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                }
+                
+                &:last-child{
+                    border-radius:.3em .3em 0 0;/* Hinzugefügt und Priorität gesetzt*/
+                    border-bottom:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                    border-left:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                    border-right:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                }
+                
+                &:not(:first-child):not(:last-child){
+                    border-left:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                    border-right:solid .1em transparent;/* Hinzugefügt und Priorität gesetzt*/
+                }
+                
+                &:hover{
+                    background-color:#333 !important;/* Hinzugefügt und Priorität gesetzt*/
+                    color:#4CAF50 !important;/* Hinzugefügt und Priorität gesetzt*/
+                    
+                    &:not(:first-child){
+                        border-left:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                    }
+                    
+                    &:not(:last-child){
+                        border-right:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                    }
+                    
+                    &:first-child{
+                        border-radius:.3em .3em 0 0 !important;/* Hinzugefügt und Priorität gesetzt*/
+                        border-top:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                        border-left:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                        border-right:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                    }
+                   &:last-child{
+                        border-radius:.3em 0 0 !important;/* Hinzugefügt und Priorität gesetzt*/
+                        border-bottom:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                        border-left:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                        border-right:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                    }
+                    
+                    &:not(:first-child):not(:last-child){
+                        border-left:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                        border-right:solid .1em transparent !important;/* Hinzugefügt und Priorität gesetzt*/
+                    }
+                }
+            }
+        }
+    }
+}
+
