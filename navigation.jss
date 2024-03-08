@@ -23,15 +23,3 @@
         <p>&copy; 2024 Taverna Catering | Solothurn, Schweiz</p>
     </footer>
 
-    <script>
-        function loadPage(page) {
-            fetch(page)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('content').innerHTML = html;
-                })
-                .catch(error => console.error('Seite konnte nicht geladen werden:', error));
-        }
-    </script>
-</body>
-</html>
