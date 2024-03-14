@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="try2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="#">
+                <img src="../GitHubOwnWebsite/css/Taverna.png" alt="Logo">
+            </a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <nav id="main-nav">
+            <ul id="nav-list">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="onepager.js"></script>
+    <!-- Home -->
+    <section id="home">
+        <hr>
+        <h1>Taverna Catering</h1>
+        <h2>Ihre Küche, Ihr Genuss</h2>
+        <a href="#about">
+            <img src="../GitHubOwnWebsite/css/pfeil.png" alt="Pfeil">
+        </a>
+    </section>
+
+    <!-- Über uns -->
+    <section id="about">
+        <h3>Über uns</h3>
+        <hr>
+        <img src="https://placehold.jp/280x170.pngservice1.jpg" alt="Avatar">
+        <h4>Weitere Informationen</h4>
+        <p>Wir sind ein erfahrener Akteur in der Gastronomiebranche und bieten seit vielen Jahren exzellente
+            Catering-Dienstleistungen an. Mit über 1000 erfolgreich abgeschlossenen Caterings im Kanton Solothurn und
+            Aargau haben wir uns einen Namen gemacht.</p>
+        <p>Unsere Catering-Services umfassen eine Vielzahl von Veranstaltungen, darunter Firmenevents, Geburtstage,
+            Feiern, Silvesterpartys, Hochzeiten und vieles mehr. Wir sind stolz darauf, unseren Kunden ein
+            unvergessliches kulinarisches Erlebnis zu bieten.</p>
+        <p>Neben unseren Catering-Dienstleistungen verwalten wir auch die Küche vom Camping Beizli in Aarburg, wo wir
+            für Qualität und Vielfalt in der Speisekarte stehen.</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+
+<h3>Unsere Angebote</h3>
+        
+        <hr>
+
+        <div id="bilder">
+            
+            <ul>
+                <li><a href="#"></a><img src="https://placehold.jp/280x170.pngservice1.jpg"
+                        alt="Service 1 Bild"></li>
+                <li><a href="#"></a><img src="https://placehold.jp/280x170.pngservice2.jpg"
+                        alt="Service 2 Bild"></li>
+                <li><a href="#"></a><img src="https://placehold.jp/280x170.pngservice3.jpg"
+                        alt="Service 3 Bild"></li>
+                <li><a href="#"></a><img src="https://placehold.jp/280x170.pngservice4.jpg"
+                        alt="Service 4 Bild"></li>
+                <li><a href="#"></a><img src="https://placehold.jp/280x170.pngservice5.jpg"
+                        alt="Service 5 Bild"></li>
+                <li><a href="#"></a><img src="https://placehold.jp/280x170.pngservice6.jpg"
+                        alt="Service 6 Bild"></li>
+            </ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+            <li><strong>Hochzeiten:</strong> Wir sorgen für kulinarische Höhepunkte an Ihrem besonderen Tag, von
+                exquisiten Buffets bis hin zu eleganten Menüs.</li>
+            <li><strong>Firmenveranstaltungen:</strong> Planen Sie eine Firmenfeier oder ein Meeting? Unsere
+                professionellen Catering-Services bieten Ihnen die perfekte Lösung.</li>
+            <li><strong>Geburtstagsfeiern:</strong> Feiern Sie Ihren Geburtstag stilvoll mit unserem maßgeschneiderten
+                Catering-Service, der für jeden Geschmack etwas bietet.</li>
+            <li><strong>Silvesterpartys:</strong> Willkommen im neuen Jahr mit einem köstlichen Buffet oder einem
+                festlichen Abendessen, das Ihre Gäste begeistern wird.</li>
+            <li><strong>Private Feiern:</strong> Egal ob Familientreffen, Jubiläen oder andere besondere Anlässe, wir
+                machen Ihre private Feier zu einem unvergesslichen Ereignis.</li>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact">
+        <h3>Kontaktieren Sie uns</h3>
+        <hr>
+        <p>Haben Sie Fragen, Anregungen oder möchten Sie mehr über unsere Leistungen erfahren? Zögern Sie nicht, uns zu
+            kontaktieren. Unser Team steht Ihnen gerne zur Verfügung.</p>
+        <p>Wir freuen uns auf Ihre Nachricht!</p>
+
+        <form>
+            <input class="input_text" type="text" placeholder="Name"><br>
+            <input class="input_text" type="email" placeholder="E-Mail"><br>
+            <textarea class="input_text" placeholder="Nachricht"></textarea><br>
+            <input class="button" type="submit" value="Absenden"> <br>
+        </form>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="footer__links">
+                <a href="#" class="footer__link">Home</a>
+                <a href="#" class="footer__link">Services</a>
+                <a href="#" class="footer__link">About Us</a>
+                <a href="#" class="footer__link">Contact</a>
+            </div>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &copy; 2024 Taverna Catering.
+        </div>
+    </footer>
+    
+</body>
+
+</html>
