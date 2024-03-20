@@ -239,7 +239,7 @@ form textarea{
 footer{
     width: 100%;
     height: 70px;
-    background-color: #3f3f3f;
+    background-color:#bea15e;
 }
 
 footer p {
@@ -257,7 +257,10 @@ footer p {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 2; /* Stellt sicher, dass das Hamburger-Menü über anderen Elementen liegt */
+    z-index: 2; 
+    background-color: transparent;
+    border: 0;
+    height: 45px;/* Stellt sicher, dass das Hamburger-Menü über anderen Elementen liegt */
     /* Weitere Stile für das Hamburger-Icon */
 }
 
@@ -283,6 +286,10 @@ footer p {
     .hamburger {
         display: block; /* Wird auf kleinen Bildschirmen angezeigt */
     }
+
+    header nav{
+        margin: 0;
+        }
 
     #main-nav {
         position: fixed;
